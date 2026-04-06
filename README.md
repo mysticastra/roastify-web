@@ -19,6 +19,21 @@ python3 -m http.server 8080
 
 Then open `http://localhost:8080`.
 
+## GitHub Pages deployment (GitHub Actions)
+
+This repo includes an auto-deploy workflow at `.github/workflows/deploy-pages.yml`.
+
+It deploys this repo to GitHub Pages when:
+
+- changes are pushed to `main`, or
+- the workflow is run manually from the Actions tab.
+
+One-time setup in GitHub:
+
+1. Open repository `Settings` -> `Pages`.
+2. Under **Build and deployment**, set **Source** to `GitHub Actions`.
+3. Push to `main` (or run the workflow manually) and wait for the deploy job to finish.
+
 ## Play Store privacy URL
 
 After publishing with GitHub Pages, use:
